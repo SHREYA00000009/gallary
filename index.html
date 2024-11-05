@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🖼️Interactive Image Gallery🖼️</h1>
+  
+  <!-- Filter Buttons -->
+  <div class="filter-btns">
+    <button data-filter="all">All</button>
+    <button data-filter="nature">🌄Nature</button>
+    <button data-filter="city">🌆City</button>
+    <button data-filter="animals">🐾Animals</button>
+    <button data-filter="human">👩‍💻Human</button>
+  </div>
+
+  <!-- Thumbnail Grid -->
+  <div class="gallery">
+    <div class="image-container" data-category="nature">
+      <img src="n.2jpg.webp" alt="Beautiful nature" data-description="A peaceful nature scene.">
+    </div>
+    <div class="image-container" data-category="city">
+      <img src="city.1.jpeg" alt="City skyline" data-description="City skyline at night.">
+    </div>
+    <div class="image-container" data-category="animals">
+      <img src="puppy.2.webp" alt="Cute puppy" data-description="A cute animal playing.">
+    </div>
+    <div class="image-container" data-category="nature">
+        <img src="n1.jpg" alt="Cute puppy" data-description="A peaceful nature scene.">
+      </div>
+      <div class="image-container" data-category="animals">
+        <img src="g.3.jpeg" alt="goat" data-description="A peaceful nature scene.">
+      </div>
+      <div class="image-container" data-category="animals">
+        <img src="tiger.5.jpg" alt="Cute puppy" data-description="A cute animal playing.">
+      </div>
+      <div class="image-container" data-category="animals">
+        <img src="cat.6.jpg" alt="Cute puppy" data-description="A cute animall playing.">
+      </div>
+      <div class="image-container" data-category="animals">
+        <img src="panda.6.jpeg" alt="Cute puppy" data-description="A cute animal playing.">
+      </div>
+      <div class="image-container" data-category="city">
+        <img src="jaipur.7.jpg" alt="Cute puppy" data-description="City skyline at nigh.">
+      </div>
+      <div class="image-container" data-category="city">
+        <img src="city .2.jpg" alt="Cute puppy" data-description="City skyline at nigh.">
+      </div>
+      <div class="image-container" data-category="city">
+        <img src="new.6.jpg" alt="Cute puppy" data-description="City skyline at nigh.">
+      </div>
+      <div class="image-container" data-category="nature">
+        <img src="nature.jpg" alt="Cute puppy" data-description="A peaceful nature scene.">
+      </div>
+      <div class="image-container" data-category="nature">
+        <img src="butter.jpg" alt="Cute puppy" data-description="A peaceful nature scene.">
+      </div>
+      <div class="image-container" data-category="human">
+        <img src="beauty..webp" alt="human" data-description="A beautifull human.">
+      </div>
+      <div class="image-container" data-category="human">
+        <img src="h..jpg" alt="human" data-description="A beautifull human.">
+      </div>
+      <div class="image-container" data-category="human">
+        <img src="f..jpeg" alt="human" data-description="A beautifull human.">
+      </div>
+      <div class="image-container" data-category="human">
+        <img src="hum.jpg" alt="human" data-description="A beautifull human.">
+      </div>
+      <div class="image-container" data-category="nature">
+        <img src="hils.webp" alt="Beautiful nature" data-description="A peaceful nature scene.">
+      </div>
+      <div class="image-container" data-category="animals">
+        <img src="tiger.6.webp" alt="Cute puppy" data-description="A cute animal playing.">
+      </div>
+      <div class="image-container" data-category="nature">
+        <img src="tree.jpg" alt="Beautiful nature" data-description="A peaceful nature scene.">
+      </div>
+      <div class="image-container" data-category="animals">
+        <img src="lion.jpg" alt="Cute puppy" data-description="A cute animal playing.">
+      </div>
+      <div class="image-container" data-category="human">
+        <img src="cute.jpeg" alt="human" data-description="A beautifull human.">
+      </div>
+      <div class="image-container" data-category="human">
+        <img src="smart.jpg" alt="human" data-description="A beautifull human.">
+      </div>
+      <div class="image-container" data-category="human">
+        <img src="sai.jpg" alt="human" data-description="A beautifull human.">
+      </div>
+
+    <!-- Add more images as needed -->
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+    <div class="description" id="description"></div>
+    <button id="prev">&#10094;</button>
+    <button id="next">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
